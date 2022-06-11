@@ -10,3 +10,12 @@ class userInput(BaseModel):
 
     class Config: 
         orm_mode = True
+
+class userOut(BaseModel):
+    email: EmailStr
+    first_name: str
+    last_name: str
+    time_created: datetime
+
+    class Config:
+        orm_mode = True
